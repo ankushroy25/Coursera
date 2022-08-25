@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resposive design</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .badge {
+        margin-right: -3px;
+        margin-top: -3px;
+        float: right;
+        text-align: center;
+        border: solid black 3px;
+        width: 100px;
+      }
+
+      .content {
+        text-align: left;
+        background-color: rgb(158, 157, 157);
+        color: black;
+        height: 170px;
+        width: 90%;
+        font-family: Arial, Helvetica, sans-serif;
+        border: solid black 3px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding-left: 15px;
+      }
+
+      .indent {
+        padding-top: 10px;
+        clear: right;
+      }
+
+      .row {
+        width: 100%;
+      }
+
+      @media (min-width: 992px) {
+        .col-lg-1,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12 {
+          float: left;
+        }
+
+        .col-lg-1 {
+          width: 8.33%;
+        }
+
+        .col-lg-2 {
+          width: 16.66%;
+        }
+
+        .col-lg-3 {
+          width: 25%;
+        }
+
+        .col-lg-4 {
+          width: 33.33%;
+        }
+
+        .col-lg-5 {
+          width: 41.66%;
+        }
+
+        .col-lg-6 {
+          width: 50%;
+        }
+
+        .col-lg-7 {
+          width: 58.33%;
+        }
+
+        .col-lg-8 {
+          width: 66.66%;
+        }
+
+        .col-lg-9 {
+          width: 75%;
+        }
+
+        .col-lg-10 {
+          width: 83.33%;
+        }
+
+        .col-lg-11 {
+          width: 91.6%;
+        }
+
+        .col-lg-12 {
+          width: 100%;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        .col-md-1,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12 {
+          float: left;
+        }
+
+        .col-md-1 {
+          width: 8.33%;
+        }
+
+        .col-md-2 {
+          width: 16.66%;
+        }
+
+        .col-md-3 {
+          width: 25%;
+        }
+
+        .col-md-4 {
+          width: 33.33%;
+        }
+
+        .col-md-5 {
+          width: 41.66%;
+        }
+
+        .col-md-6 {
+          width: 50%;
+        }
+
+        .col-md-7 {
+          width: 58.33%;
+        }
+
+        .col-md-8 {
+          width: 66.66%;
+        }
+
+        .col-md-9 {
+          width: 75%;
+        }
+
+        .col-md-10 {
+          width: 83.33%;
+        }
+
+        .col-md-11 {
+          width: 91.6%;
+        }
+
+        .col-md-12 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Our Menu</h1>
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="content">
+          <div class="badge">
+            <p style="background-color: rgb(255, 155, 163)">Chicken</p>
+          </div>
+          <p class="indent">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            voluptatum nemo culpa voluptates nam distinctio officia, saepe quis
+            architecto rem illum, reprehenderit recusandae voluptatem dolorem
+            quam hic quae sequi enim.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="content">
+          <div class="badge">
+            <p style="background-color: rgb(219, 96, 77)">Beef</p>
+          </div>
+          <p class="indent">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam omnis
+            nulla tenetur eligendi, culpa eaque exercitationem? Nam amet tenetur
+            sunt dolorum harum, vero, neque omnis dolor natus consequuntur ab a!
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <div class="content">
+          <div class="badge">
+            <p style="background-color: rgb(217, 238, 134)">Sushi</p>
+          </div>
+          <p class="indent">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+            facilis blanditiis hic id iure officiis optio in molestiae minima
+            autem quo alias, minus perspiciatis vel quam necessitatibus,
+            voluptatibus, saepe nesciunt.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      console.log("HEllo World!");
+      var x=10;
+      console.log(x+10);
+      function square(n) {
+       return n*n;
+      }
+      console.log(square(6));
+    
+    </script>
+  
+</body>
+</html>
